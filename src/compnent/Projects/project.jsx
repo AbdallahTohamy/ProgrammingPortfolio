@@ -10,7 +10,7 @@ import Sap2000 from './spaceTruss/sap2000export.PNG'
 import analyzer from './spaceTruss/analyzer.PNG'
 import Trial1 from './spaceTruss/out2.png'
 import Trial2 from './spaceTruss/out.png'
-import GPVideo from './GP/GP.mp4'
+// import GPVideo from './GP/GP.mp4'
 import laptop from './videoeditor/laptop.svg'
 import projectData from './projectData';
 // import info from './about.js'

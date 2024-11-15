@@ -1,0 +1,158 @@
+.mainContainer {
+    opacity: 0;
+    /* Start with the div hidden */
+    transition: opacity 2s ease-in-out;
+    animation: diveIn 1.5s ease-out forwards;
+}
+
+.title {
+    color: #ffd700;
+}
+
+.title:before,
+.title:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -15px;
+    border-radius: 0px;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.title:before {
+    background-color: #115173;
+    width: 25%;
+    left: 37.5%;
+}
+
+.title:after {
+    background-color: #ffd700;
+    left: 45%;
+    width: 10%;
+}
+
+/* AdvertisersServiceCard.module.css */
+
+
+.advertisersServiceSec {
+    background-color: #f5f5f5;
+}
+
+.advertisersServiceSec span {
+    color: rgb(255, 23, 131);
+}
+
+.advertisersServiceSecCol {
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+.serviceCard {
+    width: 100%;
+    /* height: 100%; */
+    padding: 2em 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    /* z-index: 2; */
+    overflow: hidden;
+    /* height: 450px; */
+    /* background: #fff; */
+}
+
+/* .serviceCard::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #115173;
+    position: absolute;
+    left: 0%;
+    top: -98%;
+    z-index: -2;
+    transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+} */
+
+/* .serviceCard:hover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ffd700;
+    position: absolute;
+    left: 0%;
+    top: -98%;
+    z-index: -2;
+    transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+} */
+
+.advertisersServiceSecH3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 1em 0;
+    z-index: 3;
+    transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+}
+
+.advertisersServiceSecP {
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    z-index: 3;
+}
+
+.iconStyles {
+    /* width: 100px;
+    height: 100px; */
+    transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+
+    color: #115173;
+}
+.emailBtn:hover{
+color: #ffd700 !important;
+}
+.serviceCard:hover .iconStyles {
+    color: #ffd700;
+    transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+
+}
+/* .serviceCard:hover .advertisersServiceSecH3 {
+    color: #ffd700;
+    transition: all 0.4s cubic-bezier(0.77, -0.04, 0, 0.99);
+
+} */
+.button {
+    display: block;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: max(calc(16px + 16 * (50vw - 600px) / 600), 1rem);
+    border: none;
+    background-color: #ffd700;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+    .serviceCard {
+
+        height: auto !important;
+    }
+}
+
+/* Define the dive-in animation */
+@keyframes diveIn {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

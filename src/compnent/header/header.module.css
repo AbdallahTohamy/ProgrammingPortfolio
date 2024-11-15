@@ -1,0 +1,296 @@
+/* wrapper button */
+.navLines {
+    z-index: 100;
+    position: fixed;
+    width: 20%;
+    max-width: 31px;
+    cursor: pointer;
+    top: 35px;
+    pointer-events: auto;
+    right: 3.5%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.WrapperLine {
+    background-color: #ffd700;
+    /* background-color: #1e94dc; */
+
+    height: 3.5px;
+    width: 32px;
+    margin-bottom: 4px;
+    transition: all .3s ease-in-out 0s;
+}
+
+.LineEffect:hover .Line1 {
+    animation: LineEff .4s;
+}
+
+.LineEffect:hover .Line2 {
+    animation: LineEff .35s;
+    animation-delay: .15s;
+
+}
+
+.LineEffect:hover .Line4 {
+    animation: LineEff .35s;
+    animation-delay: .15s;
+}
+
+.LineEffect:hover .Line3 {
+    animation: LineEff .3s;
+    animation-delay: .3s;
+}
+
+.ActiveLines .Line1 {
+    width: 0px;
+}
+
+.ActiveLines .Line3 {
+    width: 0px;
+}
+
+.ActiveLines .Rotate1 {
+    transform: rotate(45deg)
+}
+
+.ActiveLines .Rotate2 {
+    transform: rotate(-90deg)
+}
+
+/* navigation bar styles */
+.navbarLight .navbarToggler {
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.navTheme {
+    background-color: transparent;
+    position: fixed;
+    padding: 20px 1rem;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.activeNav {
+    box-shadow: 0 2px 6px 2px #00000075;
+    background-color: #022c43;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+}
+
+/* wrapper button */
+.navLinesActive {
+    top: 27px;
+    transition: all 0.3s ease-in-out;
+
+}
+.navTheme img {
+    width: 200px;
+}
+
+.navTheme .navItemEdits {
+    font-size: 20px;
+    position: relative;
+    color: #8c8c8c;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    transition: color 0s ease-in-out;
+}
+
+.mainlink {
+    position: relative;
+    color: #ffffffc2 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainlink:hover {
+    color: #ffd700 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.navTheme .active {
+    font-size: 20px;
+    color: #ffd700 !important;
+    /* color: #1e94dc !important; */
+
+}
+
+.mainlink::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    bottom: -4px;
+    left: 42%;
+    /* background-color: #1e94dc; */
+    background-color: #ffd700;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* #ffff26 */
+.mainlink:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.active {
+   color: #ffd700;
+}
+.active::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    bottom: -4px;
+    left: 42%;
+    /* background-color: #1e94dc; */
+    background-color: #ffd700;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbarToggler:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+.sublink {
+    font-weight: bold;
+    color: #8c8c8c;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdownItemActive,
+.dropdownItem:active {
+    background-color: transparent;
+}
+
+.dropdownMenu {
+    background-color: transparent;
+    top: 135%;
+    color: inherit;
+}
+
+.navDropdown {
+    transition: all 0.3s ease-in-out;
+}
+
+/* .navDropdown:hover {
+    color: #1e94dc !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.sublink:hover {
+    color: #1e94dc !important;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+} */
+
+/* Keyframe for animation if needed */
+/* @keyframes LineEff {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+/* animations */
+@keyframes LineEff {
+    0% {
+        width: 100%;
+    }
+
+    50% {
+        width: 80%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes RotateEff1 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(45deg)
+    }
+}
+
+@keyframes RotateEff2 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(-90deg)
+    }
+}
+
+/* different screen size edit */
+@media (max-width: 991.98px) {
+    .mainlink:before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        bottom: 0;
+        border-radius: 0px;
+
+        left: 25%;
+        background-color: #ffd700;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .mainlink:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    .navTheme .active::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        bottom: 0;
+        border-radius: 0px;
+
+        left: 25%;
+        background-color: #ffd700;
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+
+    }
+}
+
+@media (max-width: 768px) {
+    /* .Image-Container img{
+        height: auto !important;
+    } */
+    /* span{
+        font-size: 1rem !important;
+    } */
+    /* .button{
+      
+        font-size: 1rem !important;
+    
+    } */
+}

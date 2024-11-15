@@ -1,0 +1,55 @@
+.mainContainer {
+    opacity: 0;
+    /* Start with the div hidden */
+    transition: opacity 2s ease-in-out;
+    animation: diveIn 1.5s ease-out forwards;
+}
+
+.homeImage {
+    background-image: url('/public/Designer.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    background-position: center;
+}
+
+.headerFontSize {
+    font-size: 70px;
+}
+
+.paragraphFontSize {
+    font-size: 18px;
+}
+
+.socialLink {
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+.socialLink:hover {
+    color: #ffd700;
+    transition: all .2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .headerFontSize {
+        font-size: 40px;
+    }
+
+    .paragraphFontSize {
+        font-size: 16px;
+    }
+}
+
+/* Define the dive-in animation */
+@keyframes diveIn {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

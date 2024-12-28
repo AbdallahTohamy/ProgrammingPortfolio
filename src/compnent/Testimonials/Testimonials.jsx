@@ -19,7 +19,7 @@ const Testimonials = forwardRef(function Testimonials({ ...props }, ref) {
         slidesToShow: 1, // Number of cards per view
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2500,
+        autoplaySpeed: 4000,
         arrows: false,
         pauseOnHover: false, // Prevent pausing on hover
     };

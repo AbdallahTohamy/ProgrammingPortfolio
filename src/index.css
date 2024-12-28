@@ -19,3 +19,37 @@ html {
   height: 100px;
   width: 100%;
 }
+/* Change the color of all dots */
+.slick-dots li button:before {
+  font-size: 12px; /* Adjust size */
+  color: gray !important; /* Inactive dot color */
+  opacity: 1; /* Ensure visibility */
+}
+
+/* Change the active dot color */
+.slick-dots li.slick-active button:before {
+  color: #ffd700 !important; /* Active dot color */
+}
+
+/* Optional: Add hover effect on dots */
+.slick-dots li:hover button:before {
+  color: darkgray;
+}
+/* Customize the dots container */
+.slick-dots {
+  bottom: 20px; /* Adjust position relative to the carousel */
+  display: flex !important;
+  justify-content: center; /* Center align */
+}
+
+/* Customize the dot spacing */
+.slick-dots li {
+  margin: 0 8px; /* Adjust spacing between dots */
+}
+
+/* Change the size of the dots */
+.slick-dots li button:before {
+  font-size: 12px !important; /* Make dots larger */
+}
+
+

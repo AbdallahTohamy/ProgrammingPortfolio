@@ -120,6 +120,9 @@ export default function Header({ activeSection, ...props }) {
                                 <a className={`nav-link ${styles.mainlink} ${activeSection == 'Projects' ? styles.active : ''}`} href="#projects-section">Projects</a>
                             </li>
                             <li className={`${styles.navItemEdits} nav-item`}>
+                                <a className={`nav-link ${styles.mainlink} ${activeSection == 'Testimonials' ? styles.active : ''}`} href="#testimonials-section">Testimonials</a>
+                            </li>
+                            <li className={`${styles.navItemEdits} nav-item`}>
                                 <a className={`nav-link ${styles.mainlink} ${activeSection == 'Contact' ? styles.active : ''}`} href="#contact-section">Contact</a>
                             </li>
                         </ul>

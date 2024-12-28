@@ -5,6 +5,7 @@ import Header from './compnent/header/header'
 import Home from './compnent/home/home'
 import About from './compnent/About/about'
 import Project from './compnent/Projects/project'
+import Testimonials from './compnent/Testimonials/Testimonials'
 import Contact from './compnent/Contact/Contact'
 
 
@@ -46,7 +47,8 @@ function App() {
       <Home ref={(el) => (sectionRefs.current[0] = el)} id="Home" />
       <About ref={(el) => (sectionRefs.current[1] = el)} id="About" />
       <Project ref={(el) => (sectionRefs.current[2] = el)} id="Projects" />
-      <Contact ref={(el) => (sectionRefs.current[3] = el)} id="Contact" />
+      <Testimonials ref={(el) => (sectionRefs.current[3] = el)} id="Testimonials" />
+      <Contact ref={(el) => (sectionRefs.current[4] = el)} id="Contact" />
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

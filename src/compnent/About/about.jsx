@@ -39,7 +39,7 @@ const About=forwardRef( function About({ ...props },ref) {
                             </div>
                             <h3 className={`${styles.advertisersServiceSecH3}`}>Education</h3>
                             <p className={`${styles.advertisersServiceSecP}`}>
-                                I hold a bachelor in Civil Engineering from Cairo University,
+                                I hold a bachelor in Engineering from Cairo University,
                                 where I developed a strong foundation in both theoretical and practical aspects of the field.
                                 My academic journey has been complemented by coursework in programming,
                                 enhancing my multidisciplinary expertise.

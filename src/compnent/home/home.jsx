@@ -28,7 +28,7 @@ const Home=forwardRef( function Home({ ...props },ref) {
                     </div>
                     <div className={`col-12`}>
                         <p className={`text-white  ${styles.paragraphFontSize}`}>
-                            A multitalented professional who is skilled in civil engineering and programming, <br />
+                            A multitalented professional who is skilled in engineering and programming, <br />
                             I integrate technical knowledge with innovative software solutions, <br />
                             bridging the gap between engineering design and technology.
                         </p>

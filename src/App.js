@@ -9,9 +9,12 @@ import Testimonials from './compnent/Testimonials/Testimonials'
 import Contact from './compnent/Contact/Contact'
 
 
+import { initGA, trackEvent } from "./analytics";
 
-function App() {
-
+const App = () => {
+  useEffect(() => {
+    initGA(); // Initialize Google Analytics on page load
+  }, []);
   // set active navbar items
 
   const [activeSection, setActiveSection] = useState('Home');

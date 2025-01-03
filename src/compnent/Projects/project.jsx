@@ -18,6 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { facebook } from '@fortawesome/free-solid-svg-icons'
 // import { facebook } from '@fortawesome/free-regular-svg-icons'
 import { faFacebook, faLinkedin, faSquareUpwork, faFonticons } from '@fortawesome/free-brands-svg-icons'
+import { initGA, trackEvent } from "@/analytics";
 
 const Projects = forwardRef(function Projects({ ...props }, ref) {
     return (
@@ -52,7 +53,8 @@ const Projects = forwardRef(function Projects({ ...props }, ref) {
                                         {item.description}
                                     </p>
                                     <div className={`col-12 w-100 d-flex justify-content-center align-items-center mt-3`}>
-                                        <a href={item.URL} target='_blank' download className={`${styles.button} text-decoration-none text-dark`}>Visit</a>
+                                        <a href={item.URL} target='_blank' onClick={() => trackEvent("Button Click", "Click", item.title)}
+                                            download className={`${styles.button} text-decoration-none text-dark`}>Visit</a>
                                     </div>
                                 </div>
                             </div>

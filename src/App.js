@@ -31,6 +31,7 @@ const App = () => {
           scrollPosition < offsetTop + offsetHeight
         ) {
           setActiveSection(section.id);
+          trackEvent("Section View", "Scroll", section.id);
         } else {
           // setActiveSection("Home");
         }

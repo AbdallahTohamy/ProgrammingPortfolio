@@ -11,15 +11,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { facebook } from '@fortawesome/free-solid-svg-icons'
 // import { facebook } from '@fortawesome/free-regular-svg-icons'
 import { faFacebook, faLinkedin, faSquareUpwork, faFonticons } from '@fortawesome/free-brands-svg-icons'
+import { initGA, trackEvent } from "@/analytics";
 
-const About=forwardRef( function About({ ...props },ref) {
+const About = forwardRef(function About({ ...props }, ref) {
     return (
         <>
             {/* <div style={{ height: '100vh' }} className={`${styles.homeImage} d-flex justify-content-center align-items-center w-100 position-absolute`}>
 
             </div> */}
             <div id='about-section' className="divider"></div>
-            <div ref={ref} { ...props}  className={`d-flex justify-content-center align-items-top mt-5 w-100 ${styles.mainContainer}`}>
+            <div ref={ref} {...props} className={`d-flex justify-content-center align-items-top mt-5 w-100 ${styles.mainContainer}`}>
                 <div className='row w-100'>
                     <div className="col-12 my-5 w-100">
                         <div className={` w-100 text-white`}>
@@ -84,7 +85,9 @@ const About=forwardRef( function About({ ...props },ref) {
                         </div>
                     </div>
                     <div className={`col-12 w-100 d-flex justify-content-center align-items-center`}>
-                        <a href={CV} download className={`${styles.button} text-decoration-none text-dark`}>Download CV</a>
+                        <a href={CV}
+                            onClick={() => trackEvent("Button Click", "Click", "DownloadCV")}
+                            download className={`${styles.button} text-decoration-none text-dark`}>Download CV</a>
                     </div>
                 </div>
             </div>

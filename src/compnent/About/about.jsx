@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { facebook } from '@fortawesome/free-solid-svg-icons'
 // import { facebook } from '@fortawesome/free-regular-svg-icons'
 import { faFacebook, faLinkedin, faSquareUpwork, faFonticons } from '@fortawesome/free-brands-svg-icons'
-import { initGA, trackEvent } from "@/analytics";
+import { initGA, trackEvent } from "../../analytics";
 
 const About = forwardRef(function About({ ...props }, ref) {
     return (

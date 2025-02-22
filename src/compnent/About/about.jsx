@@ -109,6 +109,12 @@ const About = forwardRef(function About({ ...props }, ref) {
                         <button onClick={downloadFile} className={`${styles.button} text-decoration-none text-dark`}>
                             Download CV
                         </button>
+                        <a
+                            href="https://app.flowcv.com/api/public/download_resume?token=6npo3va834"
+                            download="My_Resume.pdf"
+                            className={`${styles.button} text-decoration-none text-dark`}>
+                            Download CV
+                        </a>
 
                     </div>
                 </div>

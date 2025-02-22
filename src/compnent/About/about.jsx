@@ -14,6 +14,21 @@ import { faFacebook, faLinkedin, faSquareUpwork, faFonticons } from '@fortawesom
 import { initGA, trackEvent } from "../../analytics";
 
 const About = forwardRef(function About({ ...props }, ref) {
+    const downloadFile = async () => {
+        const response = await fetch("https://app.flowcv.com/api/public/download_resume?token=6npo3va834");
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "My_Resume.pdf"; // Set file name
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        window.URL.revokeObjectURL(url); // Clean up
+    };
+
     return (
         <>
             {/* <div style={{ height: '100vh' }} className={`${styles.homeImage} d-flex justify-content-center align-items-center w-100 position-absolute`}>
@@ -88,10 +103,13 @@ const About = forwardRef(function About({ ...props }, ref) {
                         {/* <a href={CV}
                             onClick={() => trackEvent("Button Click", "Click", "DownloadCV")}
                             download className={`${styles.button} text-decoration-none text-dark`}>Download CV</a> */}
-                        <a href={`https://app.flowcv.com/api/public/download_resume?token=6npo3va834`}
+                        {/* <a href={`https://app.flowcv.com/api/public/download_resume?token=6npo3va834`}
                             // onClick={() => trackEvent("Button Click", "Click", "DownloadCV")}
-                            download className={`${styles.button} text-decoration-none text-dark`}>Download CV</a>
-                        
+                            download className={`${styles.button} text-decoration-none text-dark`}>Download CV</a> */}
+                        <button onClick={downloadFile} className={`${styles.button} text-decoration-none text-dark`}>
+                            Download CV
+                        </button>
+
                     </div>
                 </div>
             </div>

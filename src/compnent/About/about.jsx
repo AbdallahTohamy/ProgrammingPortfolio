@@ -88,9 +88,10 @@ const About = forwardRef(function About({ ...props }, ref) {
                         {/* <a href={CV}
                             onClick={() => trackEvent("Button Click", "Click", "DownloadCV")}
                             download className={`${styles.button} text-decoration-none text-dark`}>Download CV</a> */}
-                        <a href={`https://flowcv.com/resume/6npo3va834`}
+                        <a href={`https://app.flowcv.com/api/public/download_resume?token=6npo3va834`}
                             // onClick={() => trackEvent("Button Click", "Click", "DownloadCV")}
                             download className={`${styles.button} text-decoration-none text-dark`}>Download CV</a>
+                        
                     </div>
                 </div>
             </div>

@@ -50,14 +50,14 @@ const Projects = forwardRef(function Projects({ ...props }, ref) {
                                     {/* Display Technologies */}
                                     {item.technologies && (
                                         <div className={`${styles.technologiesWrapper} mt-3`}>
-                                            <h4 className={`${styles.technologiesHeading}`}>Technologies Used:</h4>
-                                            <ul className={`${styles.technologiesList}`}>
+                                            <h4 className={`${styles.technologiesHeading} text-lg font-semibold text-white mb-2`}>Technologies Used:</h4>
+                                            <div className="flex flex-wrap gap-2">
                                                 {item.technologies.map((tech, techIndex) => (
-                                                    <li key={techIndex} className={`${styles.technologyItem}`}>
+                                                    <span key={techIndex} className="inline-block px-3 py-1 bg-gray-700 text-white rounded-lg text-sm font-medium">
                                                         {tech}
-                                                    </li>
+                                                    </span>
                                                 ))}
-                                            </ul>
+                                            </div>
                                         </div>
                                     )}
                                     <div className={`col-12 w-100 d-flex justify-content-center align-items-center mt-3`}>

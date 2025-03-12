@@ -10,7 +10,8 @@ const projectData = [
 
 Key features include a dynamic, multi-layered timeline that allows for precise editing across video, audio, and effects, along with real-time previews to streamline the workflow. Users can easily drag and drop media files, apply effects, trim clips, and make non-linear edits with just a few clicks. The interface adapts to user needs, providing customizable options that enhance the editing process without overwhelming the user.`,
     "imagePath": video,
-    "URL": "https://clipvector2.netlify.app/"
+    "URL": "https://clipvector2.netlify.app/",
+    "technologies": ["JavaScript", "React", "WebGL", "HTML5 Canvas", "CSS3", "FFmpeg", "Node.js", "Azure", "GitHub Actions (CI/CD)", "Azure Pipelines (CI/CD)"]
   },
   {
     "title": "Complete Greet",
@@ -18,7 +19,8 @@ Key features include a dynamic, multi-layered timeline that allows for precise e
 
 At the core of Complete Greet is a powerful widget that integrates effortlessly into your website, acting as a real-time interaction tool for your customers. This widget fosters deeper engagement by allowing you to communicate directly with your audience, responding to their needs and inquiries instantly. Not only does it improve customer service and satisfaction, but it also serves as a valuable feedback mechanism, providing key insights into user behavior, preferences, and how they navigate your site.`,
     "imagePath": CG,
-    "URL": "https://completegreet.com/"
+    "URL": "https://completegreet.com/",
+    "technologies": ["JavaScript", "WebSockets", "Node.js", "Express", "Sequelize", "UI/UX Design", "DigitalOcean"]
   },
   {
     "title": "Shanda Studio: Revolutionizing Podcast Creation with AI-Driven Solutions",
@@ -27,8 +29,8 @@ At the core of Complete Greet is a powerful widget that integrates effortlessly 
 
 With features like automatic episode titling, intelligent audio enhancement, and seamless integration for publishing to leading platforms like Spotify and Apple Podcasts, Shanda Studio minimizes the complexities of production. Built by podcasters for podcasters, this platform harnesses the power of AI to streamline workflows and automate repetitive tasks, enabling creators to focus on what truly matters—crafting engaging content.`,
     "imagePath": shanda,
-    "URL": "https://www.shanda.studio/"
-
+    "URL": "https://www.shanda.studio/",
+    "technologies": ["AI Integration (OpenAI API)", "React", "Next.js", "Node.js", "FFmpeg", "RSS Feeds", "SEO Optimization", "AWS", "AWS CodePipeline (CI/CD)", "Jest (Testing)"]
   },
   {
     "title": "TrainBridge",
@@ -37,8 +39,9 @@ With features like automatic episode titling, intelligent audio enhancement, and
 
 With real-time private messaging, clients and coaches can communicate effortlessly, ensuring continuous support and guidance. Clients can upload inbody data, share food preferences, and receive nutrition plans crafted specifically for their goals. Coaches can track progress, adjust routines, and provide ongoing feedback, ensuring athletes reach their full potential.`,
     "imagePath": Tamren,
-    // "URL": "Coming Soon"
-
+    // "URL": "Coming Soon",
+    "technologies": ["Technologies used in TrainBridge"] // Add the specific technologies used here
   }
-]
-export default projectData
+];
+
+export default projectData;

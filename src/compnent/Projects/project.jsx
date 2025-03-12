@@ -38,28 +38,42 @@ const Projects = forwardRef(function Projects({ ...props }, ref) {
                     </div>
                     {
                         projectData.map((item, index) => (
-                            <div className={`${styles.advertisersServiceSecCol} col-lg-12 `}>
+                            <div className={`${styles.advertisersServiceSecCol} col-lg-12`} key={index}>
                                 <div className={`${styles.serviceCard} text-white`}>
                                     <div className={`${styles.iconWrapper}`}>
-                                        {/* <FontAwesomeIcon className='fa-3x' icon={faLinkedin} /> */}
-                                        {/* <svg src={mortarboard} alt="mortarboard-icon" /> */}
-                                        {/* <Mortarboard/> */}
-                                        {/* <ReactSVG
-                                            className={`${styles.iconStyles} d-flex align-items-center justify-content-center w-100`} src={mortarboard} /> */}
-                                        <img src={item.imagePath} className='w-100' />
+                                        <img src={item.imagePath} className='w-100' alt={item.title} />
                                     </div>
                                     <h3 className={`${styles.advertisersServiceSecH3}`}>{item.title}</h3>
                                     <p className={`${styles.advertisersServiceSecP}`}>
                                         {item.description}
                                     </p>
+                                    {/* Display Technologies */}
+                                    {item.technologies && (
+                                        <div className={`${styles.technologiesWrapper} mt-3`}>
+                                            <h4 className={`${styles.technologiesHeading}`}>Technologies Used:</h4>
+                                            <ul className={`${styles.technologiesList}`}>
+                                                {item.technologies.map((tech, techIndex) => (
+                                                    <li key={techIndex} className={`${styles.technologyItem}`}>
+                                                        {tech}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
                                     <div className={`col-12 w-100 d-flex justify-content-center align-items-center mt-3`}>
-                                        <a href={item.URL} target='_blank' onClick={() => trackEvent("Button Click", "Click", item.title)}
-                                            download className={`${styles.button} text-decoration-none text-dark`}>Visit</a>
+                                        <a
+                                            href={item.URL}
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            onClick={() => trackEvent("Button Click", "Click", item.title)}
+                                            className={`${styles.button} text-decoration-none text-dark`}
+                                        >
+                                            Visit
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                        )
-                        )
+                        ))
                     }
                     <div className={`${styles.advertisersServiceSecCol} col-lg-12 `}>
                         <div className={`${styles.serviceCard} text-white`}>

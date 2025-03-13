@@ -8,6 +8,10 @@
 .title {
     color: #ffd700;
 }
+.colorTheme{
+    color: #ffd700;
+
+}
 
 .title:before,
 .title:after {

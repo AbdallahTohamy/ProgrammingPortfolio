@@ -30,7 +30,7 @@ At the core of Complete Greet is a powerful widget that integrates effortlessly 
 With features like automatic episode titling, intelligent audio enhancement, and seamless integration for publishing to leading platforms like Spotify and Apple Podcasts, Shanda Studio minimizes the complexities of production. Built by podcasters for podcasters, this platform harnesses the power of AI to streamline workflows and automate repetitive tasks, enabling creators to focus on what truly matters—crafting engaging content.`,
     "imagePath": shanda,
     "URL": "https://www.shanda.studio/",
-    "technologies": ["AI Integration (OpenAI API)", "React", "Next.js", "Node.js", "FFmpeg", "RSS Feeds", "SEO Optimization", "AWS", "AWS CodePipeline (CI/CD)", "Jest (Testing)"]
+    "technologies": ["AI Integration (OpenAI API)", "React", "Next.js", "TailWind", "Node.js", "FFmpeg", "RSS Feeds", "SEO Optimization", "AWS", "AWS CodePipeline (CI/CD)", "Jest (Testing)"]
   },
   {
     "title": "TrainBridge",
@@ -40,7 +40,7 @@ With features like automatic episode titling, intelligent audio enhancement, and
 With real-time private messaging, clients and coaches can communicate effortlessly, ensuring continuous support and guidance. Clients can upload inbody data, share food preferences, and receive nutrition plans crafted specifically for their goals. Coaches can track progress, adjust routines, and provide ongoing feedback, ensuring athletes reach their full potential.`,
     "imagePath": Tamren,
     // "URL": "Coming Soon",
-    "technologies": ["Technologies used in TrainBridge"] // Add the specific technologies used here
+    "technologies": ["HTML", "CSS", "bootstrap", "Node.js", "Sequelize", "Express", "JavaScript"] // Add the specific technologies used here
   }
 ];
 

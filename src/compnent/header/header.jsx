@@ -100,7 +100,7 @@ export default function Header({ activeSection, ...props }) {
                                 <a className={`nav-link ${styles.mainlink} ${activeSection == 'Home' ? styles.active : ''}`} href="#Home">Home <span className="sr-only">(current)</span></a>
                             </li>
                             <li className={`${styles.navItemEdits} nav-item `}>
-                                <a className={`nav-link ${styles.mainlink} ${activeSection == 'About' ? styles.active : ''}`} href="#about-section">About Us</a>
+                                <a className={`nav-link ${styles.mainlink} ${activeSection == 'About' ? styles.active : ''}`} href="#about-section">About Me</a>
                             </li>
                             {/* <li className={`${styles.navItemEdits} nav-item ${activeSection == 'Projects' ? styles.active : ''}`}>
                                 <a className={`nav-link ${styles.mainlink} `} href="Services.html" id="navbarDropdown" role="button"

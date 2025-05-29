@@ -8,7 +8,7 @@ import Project from './compnent/Projects/project'
 import Testimonials from './compnent/Testimonials/Testimonials'
 import Contact from './compnent/Contact/Contact'
 
-
+TodoList
 import { initGA, trackEvent } from "./analytics";
 
 const App = () => {
